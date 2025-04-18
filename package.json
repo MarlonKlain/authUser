@@ -1,0 +1,28 @@
+{
+  "name": "userauth",
+  "version": "1.0.0",
+  "description": "This is a project to learn how to create a user authentication.",
+  "license": "ISC",
+  "author": "Marlon",
+  "type": "module",
+  "main": "index.js",
+  "prisma": {
+    "seed": "node ./prisma/seed/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node --watch --env-file=./.env src/server.js"
+  },
+  "dependencies": {
+    "@fastify/swagger": "^9.5.0",
+    "@fastify/swagger-ui": "^5.2.2",
+    "@prisma/client": "^6.6.0",
+    "argon2": "^0.41.1",
+    "fastify": "^5.3.0",
+    "glob": "^11.0.1",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "prisma": "^6.6.0"
+  }
+}
